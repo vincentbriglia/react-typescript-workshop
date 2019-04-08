@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "shinnn.stylelint",
+    "EditorConfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "zengxingxin.sort-js-object-keys",
+    "eg2.tslint"
+    // "ms-vscode.vscode-typescript-tslint-plugin"
+  ]
+}
