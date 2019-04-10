@@ -7,6 +7,9 @@ interface IExercise2Props {
   description: string;
 }
 
+/**
+ * Create a “Card” component that renders an image, a title and a description based off of props
+ */
 export const Exercise2: FunctionComponent<IExercise2Props> = ({
   firstName,
   lastName,

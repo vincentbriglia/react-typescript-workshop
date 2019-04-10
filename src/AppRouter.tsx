@@ -3,6 +3,7 @@ import { BrowserRouter, Link, NavLink, Route, Switch } from 'react-router-dom';
 import { App } from './App';
 import { Exercise1 } from './components/Exercise1';
 import { Exercise2 } from './components/Exercise2';
+import { Exercise2b } from './components/Exercise2b';
 import { Exercise3 } from './components/Exercise3';
 import { Exercise3b } from './components/Exercise3b';
 import { Exercise4 } from './components/Exercise4';
@@ -10,6 +11,7 @@ import { Exercise5 } from './components/Exercise5';
 import { Exercise6 } from './components/Exercise6';
 import { Exercise7 } from './components/Exercise7';
 import { Exercise8 } from './components/Exercise8';
+import { Exercise9 } from './components/Exercise9';
 import { Header } from './components/Header';
 import { NoMatch } from './components/NoMatch';
 
@@ -41,6 +43,19 @@ export const AppRouter: FunctionComponent = () => {
                     />
                   )}
                 />
+                <Route
+                  exact
+                  path="/exercise2b"
+                  render={() => (
+                    <Exercise2b
+                      firstName="Emmet"
+                      middleName="Joseph"
+                      lastName="Brickowski"
+                      description="Master Builder"
+                      avatar="https://costumewall.com/wp-content/uploads/2017/02/emmet-brickowski-costume.jpg"
+                    />
+                  )}
+                />
                 <Route exact path="/exercise3" component={Exercise3} />
                 <Route exact path="/exercise3b" component={Exercise3b} />
                 <Route exact path="/exercise4" component={Exercise4} />
@@ -48,6 +63,7 @@ export const AppRouter: FunctionComponent = () => {
                 <Route exact path="/exercise6" component={Exercise6} />
                 <Route exact path="/exercise7" component={Exercise7} />
                 <Route exact path="/exercise8" component={Exercise8} />
+                <Route exact path="/exercise9" component={Exercise9} />
                 <Route exact path="*" component={NoMatch} />
               </Switch>
             </div>

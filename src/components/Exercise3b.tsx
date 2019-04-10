@@ -1,57 +1,19 @@
-import React from 'react';
+import React, { FunctionComponent, useState } from 'react';
 
-// tslint:disable-next-line:no-empty-interface
-interface IExcercise3bProps {}
+/**
+ * Create a component that uses state to conditionally render a name, along with a button that
+ * allows you to toggle between names
+ */
+export const Exercise3b: FunctionComponent = () => {
+  const [checked, handleChange] = useState(false);
 
-interface IExercise3bState {
-  firstName: string;
-  lastName: string;
-  [k: string]: string;
-}
+  const name = checked ? 'Bad Cop' : 'Good Cop';
 
-export class Exercise3b extends React.Component<IExcercise3bProps, IExercise3bState> {
-  constructor(props: IExcercise3bProps) {
-    super(props);
-    this.state = {
-      firstName: '',
-      lastName: '',
-    };
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  public handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-
-  public render() {
-    const { firstName, lastName } = this.state;
-
-    return (
-      <div className="ui segment">
-        <div className="ui label">
-          Hello {firstName} {lastName}
-        </div>
-        <form className="ui form">
-          <div className="field">
-            <label>First Name</label>
-            <input
-              type="text"
-              name="firstName"
-              onChange={this.handleChange}
-              placeholder="First Name"
-            />
-          </div>
-          <div className="field">
-            <label>Last Name</label>
-            <input
-              type="text"
-              name="lastName"
-              onChange={this.handleChange}
-              placeholder="Last Name"
-            />
-          </div>
-        </form>
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      {name}
+      <br />
+      <input type="checkbox" onChange={() => handleChange(!checked)} checked={checked} />
+    </div>
+  );
+};

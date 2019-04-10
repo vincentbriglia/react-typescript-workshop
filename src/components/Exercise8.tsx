@@ -2,6 +2,10 @@
 import axios from 'axios';
 import React, { FunctionComponent, useEffect, useState } from 'react';
 
+/**
+ * Create a component that fetches user information from an API, put that information into state to
+ * render a user card by using useState
+ */
 export const Exercise8: FunctionComponent = () => {
   const [data, setData] = useState({});
 

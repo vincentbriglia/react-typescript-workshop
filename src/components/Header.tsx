@@ -14,6 +14,9 @@ export const Header: FunctionComponent = () => {
       <NavLink exact activeClassName="active" className="item" to="/exercise2">
         Exercise 2
       </NavLink>
+      <NavLink exact activeClassName="active" className="item" to="/exercise2b">
+        Exercise 2b
+      </NavLink>
       <NavLink exact activeClassName="active" className="item" to="/exercise3">
         Exercise 3
       </NavLink>
@@ -34,6 +37,9 @@ export const Header: FunctionComponent = () => {
       </NavLink>
       <NavLink exact activeClassName="active" className="item" to="/exercise8">
         Exercise 8
+      </NavLink>
+      <NavLink exact activeClassName="active" className="item" to="/exercise9">
+        Exercise 9
       </NavLink>
     </div>
   );

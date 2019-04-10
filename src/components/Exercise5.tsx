@@ -10,6 +10,10 @@ interface IAppState {
   value: number;
 }
 
+/**
+ * Create a component that re-renders only every other click, but updates a counter incrementally,
+ * without using useState
+ */
 export class Exercise5 extends Component<IAppProps, IAppState> {
   constructor(props: IAppProps) {
     super(props);

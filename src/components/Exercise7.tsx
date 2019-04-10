@@ -14,6 +14,10 @@ interface IRandomUserData {
   results: any;
 }
 
+/**
+ * Create a component that fetches user information from an API, put that information into state to
+ * render a user card without using useState
+ */
 export class Exercise7 extends Component<IAppProps, IAppState> {
   constructor(props: IAppProps) {
     super(props);
