@@ -7,10 +7,6 @@ interface IExercise3State {
   checked: boolean;
 }
 
-/**
- * Create a component that uses state to conditionally render two names, using a checkbox that
- * allows you to toggle between names
- */
 export class Exercise3 extends React.Component<IExercise3Props, IExercise3State> {
   constructor(props: IExercise3Props) {
     super(props);

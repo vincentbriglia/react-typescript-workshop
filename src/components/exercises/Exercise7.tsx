@@ -1,29 +1,27 @@
 // tslint:disable:no-null-keyword
 import axios from 'axios';
 import React, { Component } from 'react';
+import { Exercise2, IExercise2Props } from './Exercise2';
 
 interface IAppProps {
   someProp?: string;
 }
 
-interface IAppState {
-  data: object;
-}
+// tslint:disable-next-line:no-empty-interface
+interface IAppState extends IExercise2Props {}
 
 interface IRandomUserData {
   results: any;
 }
 
-/**
- * Create a component that fetches user information from an API, put that information into state to
- * render a user card without using useState
- */
 export class Exercise7 extends Component<IAppProps, IAppState> {
   constructor(props: IAppProps) {
     super(props);
 
     this.state = {
-      data: {},
+      description: '',
+      firstName: '',
+      lastName: '',
     };
   }
 
@@ -34,13 +32,17 @@ export class Exercise7 extends Component<IAppProps, IAppState> {
         url: 'https://randomuser.me/api/',
       })
       .then((response) => {
+        const responseUser = response.data.results[0];
+
         this.setState({
-          data: response.data,
+          description: responseUser.email,
+          firstName: responseUser.name.first,
+          lastName: responseUser.name.last,
         });
       });
   }
 
   public render() {
-    return <pre>{JSON.stringify(this.state.data, null, 4)}</pre>;
+    return <Exercise2 {...this.state} />;
   }
 }

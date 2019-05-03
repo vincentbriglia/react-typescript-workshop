@@ -1,6 +1,5 @@
-import autobind from 'autobind-decorator';
 import React, { Component } from 'react';
-import { OnlyEvens } from './OnlyEvens';
+import { OnlyEvens } from '../OnlyEvens';
 
 interface IAppProps {
   someProp?: string;
@@ -10,10 +9,6 @@ interface IAppState {
   value: number;
 }
 
-/**
- * Create a component that re-renders only every other click, but updates a counter incrementally,
- * without using useState
- */
 export class Exercise5 extends Component<IAppProps, IAppState> {
   constructor(props: IAppProps) {
     super(props);

@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import { IExercise1Props } from './Exercise1';
 
 interface IExercise2Props {
   firstName: string;
@@ -29,10 +28,6 @@ export const FullNameComponent: FunctionComponent<Partial<IExercise2Props>> = ({
   </a>
 );
 
-/**
- * Create a “Card” component that renders an image, a title and a description based off of props but
- * with components for image, title and description
- */
 export const Exercise2b: FunctionComponent<IExercise2Props> = ({
   firstName,
   middleName,

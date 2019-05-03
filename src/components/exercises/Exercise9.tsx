@@ -1,6 +1,8 @@
 import React, { FunctionComponent, useReducer } from 'react';
 
-const initialState = 0;
+export interface IExercise9Props {
+  initialCount: number;
+}
 
 const reducer = (state: number, action: string) => {
   switch (action) {
@@ -15,15 +17,12 @@ const reducer = (state: number, action: string) => {
   }
 };
 
-/**
- * create a +/-/reset counter using useReducer
- */
-export const Exercise9: FunctionComponent = () => {
-  const [count, dispatch] = useReducer(reducer, initialState);
+export const Exercise9: FunctionComponent<IExercise9Props> = ({ initialCount }) => {
+  const [count, dispatch] = useReducer(reducer, initialCount);
 
   return (
     <div>
-      <div className="ui segment basic">
+      <div className="ui segment">
         <div className="ui label">
           Count
           <div className="detail">{count}</div>
