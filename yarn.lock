@@ -878,34 +878,33 @@
     reflect-metadata "^0.1.12"
     tslib "^1.8.1"
 
-"@lego/prettier-config@1.7.8":
-  version "1.7.8"
-  resolved "https://registry.yarnpkg.com/@lego/prettier-config/-/prettier-config-1.7.8.tgz#e358a3f90e7486941c1785735ba327a01dad7c9e"
-  integrity sha512-yMND38AY46YdiuaKP3a2U4jnb/j9gjZ4ixCTJ8yqhGRZVUNZSAc5aQ/MSHlJCyhfUnRBDBwE/IxqprJwzpaI6w==
+"@lego/prettier-config@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@lego/prettier-config/-/prettier-config-1.8.1.tgz#0e2da0f4d324e2ec4f5905a5c049053c889b8b38"
+  integrity sha512-E+vub2xr72qBp5EJ320psmNVi23OPLceuYEZZl+FJOL1mei/dUF2MUfY5AbbcG0mNIiXhHj17rMq3hWdsTQ+YQ==
   dependencies:
-    "@lego/tslint-config" "2.0.7"
-    "@lego/tslint-config-prettier" "1.7.7"
+    prettier "1.18.2"
 
-"@lego/tslint-config-prettier@1.7.7":
-  version "1.7.7"
-  resolved "https://registry.yarnpkg.com/@lego/tslint-config-prettier/-/tslint-config-prettier-1.7.7.tgz#9196b5123d89d2d2b88643ec436a9f165e28b81f"
-  integrity sha512-MYFVx0nc5+hqJXDO/qAI5awJYWhiW1G7XD/y0bScrT1t2i3lGr+mrbcueKFdw+MxHDlsbpzSD1CILDB314p41g==
+"@lego/tslint-config-prettier@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@lego/tslint-config-prettier/-/tslint-config-prettier-1.8.1.tgz#65e2222e040f689f0fe09563106cb84bf9dc1355"
+  integrity sha512-rhjl/ohtb8bLQPePU7MhVSZQasQIxRD+03c6tSdy9bTy3wvEr6Jb/qYwTNaJKm6usG6RdR98Dx8eF4QVawisXw==
   dependencies:
-    "@lego/prettier-config" "1.7.8"
-    prettier "1.16.4"
-    tslint "5.15.0"
+    "@lego/prettier-config" "1.8.1"
+    prettier "1.18.2"
     tslint-config-prettier "1.18.0"
     tslint-plugin-prettier "2.0.1"
 
-"@lego/tslint-config@2.0.7":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@lego/tslint-config/-/tslint-config-2.0.7.tgz#f10d72d7b49e15bd593a0a3448fbefcfd8f97490"
-  integrity sha512-yf8cvLRdgChDtYxWaR9sIh34a+1qIffCHL9e1W+bHWh64MqwfvotQ592ZPFPL6xNXbGexg2t/8UBFofGbjrHHw==
+"@lego/tslint-config@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@lego/tslint-config/-/tslint-config-2.1.1.tgz#fef4fd6879561641944d3eecda8bd159c98fc817"
+  integrity sha512-IHYRPCTKQmY5MpLuUn5GmNyDYKz30xy54ECly1h3C0DWJAWUyf5jiQ3gt/vldTeSxYB/cK8P9Sm+sA50PIf4+g==
   dependencies:
-    "@lego/tslint-config-prettier" "1.7.7"
+    "@lego/tslint-config-prettier" "1.8.1"
     lodash.omit "4.5.0"
+    tslint "5.17.0"
     tslint-consistent-codestyle "1.15.1"
-    tslint-lines-between-class-members "1.3.1"
+    tslint-lines-between-class-members "1.3.2"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -5853,7 +5852,7 @@ js-yaml@^3.12.0, js-yaml@^3.7.0, js-yaml@^3.9.0:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^3.13.0:
+js-yaml@^3.13.1:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
   integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
@@ -7959,10 +7958,10 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-prettier@1.16.4:
-  version "1.16.4"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.4.tgz#73e37e73e018ad2db9c76742e2647e21790c9717"
-  integrity sha512-ZzWuos7TI5CKUeQAtFd6Zhm2s6EpAD/ZLApIhsF9pRvRtM1RFo61dM/4MSRUA0SuLugA/zgrZD8m0BaY46Og7g==
+prettier@1.18.2:
+  version "1.18.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.18.2.tgz#6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
+  integrity sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
 
 pretty-bytes@^4.0.2:
   version "4.0.2"
@@ -9719,10 +9718,10 @@ tslint-consistent-codestyle@1.15.1:
     tslib "^1.7.1"
     tsutils "^2.29.0"
 
-tslint-lines-between-class-members@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/tslint-lines-between-class-members/-/tslint-lines-between-class-members-1.3.1.tgz#57348b610efcdc6be821d233ebb8ca9a9ceb970d"
-  integrity sha512-u1WeEM7cEbwxvdAFGhy1ZhJhZ98qayN0g9n/q94FNK/XHEcgeVw+R8ZyMMyZTrbm4B52s8Oh0vdVh8bcnlTa4Q==
+tslint-lines-between-class-members@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/tslint-lines-between-class-members/-/tslint-lines-between-class-members-1.3.2.tgz#c38eea6b21a18385870f25acc0a11d41f8a905fc"
+  integrity sha512-rowB+rBx5Gl2uGCUZVjjXnjiLdrjvnAoTHHQFr2+TvlIBK8LquW2Ik0BUH+nQwMlPEOhUYbho5CZAn4fhuwW0g==
 
 tslint-plugin-prettier@2.0.1:
   version "2.0.1"
@@ -9733,18 +9732,18 @@ tslint-plugin-prettier@2.0.1:
     lines-and-columns "^1.1.6"
     tslib "^1.7.1"
 
-tslint@5.15.0:
-  version "5.15.0"
-  resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.15.0.tgz#6ffb180986d63afa1e531feb2a134dbf961e27d3"
-  integrity sha512-6bIEujKR21/3nyeoX2uBnE8s+tMXCQXhqMmaIPJpHmXJoBJPTLcI7/VHRtUwMhnLVdwLqqY3zmd8Dxqa5CVdJA==
+tslint@5.17.0:
+  version "5.17.0"
+  resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.17.0.tgz#f9f0ce2011d8e90debaa6e9b4975f24cd16852b8"
+  integrity sha512-pflx87WfVoYepTet3xLfDOLDm9Jqi61UXIKePOuca0qoAZyrGWonDG9VTbji58Fy+8gciUn8Bt7y69+KEVjc/w==
   dependencies:
-    babel-code-frame "^6.22.0"
+    "@babel/code-frame" "^7.0.0"
     builtin-modules "^1.1.1"
     chalk "^2.3.0"
     commander "^2.12.1"
     diff "^3.2.0"
     glob "^7.1.1"
-    js-yaml "^3.13.0"
+    js-yaml "^3.13.1"
     minimatch "^3.0.4"
     mkdirp "^0.5.1"
     resolve "^1.3.2"
