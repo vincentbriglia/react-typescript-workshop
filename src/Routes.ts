@@ -14,6 +14,7 @@ import { Exercise6 } from './components/exercises/Exercise6';
 import { Exercise7 } from './components/exercises/Exercise7';
 import { Exercise8 } from './components/exercises/Exercise8';
 import { Exercise9 } from './components/exercises/Exercise9';
+import { resources } from './Helpers';
 
 export const routeData = [
   {
@@ -43,7 +44,7 @@ export const routeData = [
     difficulty: 'B',
     id: '2b',
     props: {
-      avatar: 'https://costumewall.com/wp-content/uploads/2017/02/emmet-brickowski-costume.jpg',
+      avatar: resources.avatarImageUri,
       description: 'Master Builder',
       firstName: 'Emmet',
       lastName: 'Brickowski',

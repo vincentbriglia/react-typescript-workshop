@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import { resources } from './../../Helpers';
 
 export interface IExercise2Props {
   firstName: string;
@@ -13,7 +14,7 @@ export const Exercise2: FunctionComponent<IExercise2Props> = ({
 }) => (
   <div className="ui card">
     <div className="image">
-      <img src="https://costumewall.com/wp-content/uploads/2017/02/emmet-brickowski-costume.jpg" />
+      <img src={resources.avatarImageUri} />
     </div>
     <div className="content">
       <a className="header">
