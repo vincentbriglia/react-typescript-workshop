@@ -1338,14 +1338,14 @@
 
 "@lego/prettier-config@2.0.0":
   version "2.0.0"
-  resolved "https://npm.pkg.github.com/download/@lego/prettier-config/2.0.0/f5f2030110cdec888bfd97dd56ddb9f85a3a20d49d6790f5636984701c2fed03#53bd30e1a1f4a656f41bfcf776bba978b8fb97ca"
+  resolved "https://registry.yarnpkg.com/@lego/prettier-config/-/prettier-config-2.0.0.tgz#53bd30e1a1f4a656f41bfcf776bba978b8fb97ca"
   integrity sha512-Nvl68FWFcVPwnIpxcb5dS8LgyFLMc5p0BwUe9QId0kCKZCZZvg6VqWzqyjJSgb3i3rZwQhI92/SjRy+lW9ZocA==
   dependencies:
     prettier "2.0.5"
 
 "@lego/tslint-config-prettier@2.0.0":
   version "2.0.0"
-  resolved "https://npm.pkg.github.com/download/@lego/tslint-config-prettier/2.0.0/4f8a923bb575d604803e57cb62ecc00333bd6a8eca5d8be45119fe72ef3702cc#fa67733acb11e5ce0c6c69bbc884a1a29207e5ce"
+  resolved "https://registry.yarnpkg.com/@lego/tslint-config-prettier/-/tslint-config-prettier-2.0.0.tgz#fa67733acb11e5ce0c6c69bbc884a1a29207e5ce"
   integrity sha512-fsV5zZj8KRcm95PSQou0l97BAJhcuDr7ep5op4Q1Tj1rnh8BJPKlOI+ahgYxCXF0ON3EkYANF30v1XWQpjJAtA==
   dependencies:
     "@lego/prettier-config" "2.0.0"
@@ -1356,7 +1356,7 @@
 
 "@lego/tslint-config@3.0.0":
   version "3.0.0"
-  resolved "https://npm.pkg.github.com/download/@lego/tslint-config/3.0.0/bcb39a3053a9def2aba24cf06c497264bcb4e279597a255e9e5a4133c8e06d71#1c7524438c5a49288b67b3921c77f1974875b0d5"
+  resolved "https://registry.yarnpkg.com/@lego/tslint-config/-/tslint-config-3.0.0.tgz#1c7524438c5a49288b67b3921c77f1974875b0d5"
   integrity sha512-Wh3V+5FGoDy0r3CCuunGpwGqld/9wTpsgSFo1SZCT9uworXXMMUWB/bHRSDdQ5QOAcRrW24y5J/5mAQ4dbrHog==
   dependencies:
     "@lego/tslint-config-prettier" "2.0.0"
