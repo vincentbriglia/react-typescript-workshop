@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 
 export class App extends Component {
   public render() {
-    return <div>Hello</div>;
+    return (
+      <div className="classname" id="34" aria-hidden="true">
+        Hello
+        <span></span>
+      </div>
+    );
   }
 }

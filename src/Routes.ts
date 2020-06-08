@@ -4,6 +4,7 @@ import { Exercise11 } from './components/exercises/Exercise11';
 import { Exercise12 } from './components/exercises/Exercise12';
 import { Exercise13 } from './components/exercises/Exercise13';
 import { Exercise14 } from './components/exercises/Exercise14';
+import { Exercise15 } from './components/exercises/Exercise15';
 import { Exercise2 } from './components/exercises/Exercise2';
 import { Exercise2b } from './components/exercises/Exercise2b';
 import { Exercise3 } from './components/exercises/Exercise3';
@@ -43,7 +44,8 @@ export const routeData = [
     difficulty: 'B',
     id: '2b',
     props: {
-      avatar: 'https://costumewall.com/wp-content/uploads/2017/02/emmet-brickowski-costume.jpg',
+      avatar:
+        'https://cdnb.artstation.com/p/assets/images/images/018/282/767/large/chris-rams-emmet-closeup-chris-rams.jpg?1558812610',
       description: 'Master Builder',
       firstName: 'Emmet',
       lastName: 'Brickowski',
@@ -130,5 +132,11 @@ export const routeData = [
     description: `Create a Tab / TabPanel Compound Component using context, hooks and other techniques you have learned in this workshop`,
     difficulty: 'A',
     id: '14',
+  },
+  {
+    component: Exercise15,
+    description: `Instagram Clone!`,
+    difficulty: 'A',
+    id: '15',
   },
 ];

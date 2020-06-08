@@ -10,18 +10,27 @@ interface IExercise4State {
 }
 
 export class Exercise4 extends React.Component<IExcercise4Props, IExercise4State> {
-  constructor(props: IExcercise4Props) {
+  public constructor(props: IExcercise4Props) {
     super(props);
     this.state = {
       firstName: '',
       lastName: '',
-      12434: 'hello',
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleChangeFirstName = this.handleChangeFirstName.bind(this);
+    this.handleChangeLastName = this.handleChangeLastName.bind(this);
   }
 
   public handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     this.setState({ [e.target.name]: e.target.value });
+  }
+
+  public handleChangeFirstName(e: React.ChangeEvent<HTMLInputElement>) {
+    this.setState({ firstName: e.target.value });
+  }
+
+  public handleChangeLastName(e: React.ChangeEvent<HTMLInputElement>) {
+    this.setState({ lastName: e.target.value });
   }
 
   public render() {
@@ -38,7 +47,7 @@ export class Exercise4 extends React.Component<IExcercise4Props, IExercise4State
             <input
               type="text"
               name="firstName"
-              onChange={this.handleChange}
+              onChange={this.handleChangeFirstName}
               placeholder="First Name"
             />
           </div>
@@ -47,7 +56,7 @@ export class Exercise4 extends React.Component<IExcercise4Props, IExercise4State
             <input
               type="text"
               name="lastName"
-              onChange={this.handleChange}
+              onChange={this.handleChangeLastName}
               placeholder="Last Name"
             />
           </div>

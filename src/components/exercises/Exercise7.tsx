@@ -8,20 +8,23 @@ interface IAppProps {
 }
 
 // tslint:disable-next-line:no-empty-interface
-interface IAppState extends IExercise2Props {}
+interface IAppState extends IExercise2Props {
+  loading: boolean;
+}
 
 interface IRandomUserData {
   results: any;
 }
 
 export class Exercise7 extends Component<IAppProps, IAppState> {
-  constructor(props: IAppProps) {
+  public constructor(props: IAppProps) {
     super(props);
 
     this.state = {
       description: '',
       firstName: '',
       lastName: '',
+      loading: true,
     };
   }
 
@@ -34,15 +37,31 @@ export class Exercise7 extends Component<IAppProps, IAppState> {
       .then((response) => {
         const responseUser = response.data.results[0];
 
-        this.setState({
-          description: responseUser.email,
-          firstName: responseUser.name.first,
-          lastName: responseUser.name.last,
-        });
+        this.setState(
+          {
+            description: responseUser.email,
+            firstName: responseUser.name.first,
+            lastName: responseUser.name.last,
+          },
+          () => {
+            this.setState({ loading: false });
+          }
+        );
+      })
+      .catch((err) => {
+        console.log('SPECIAL ERROR REPORT', err);
+      })
+      .finally(() => {
+        console.log('I ALWAYS GET LOGGED');
+        this.setState({ loading: false });
       });
   }
 
   public render() {
+    if (this.state.loading) {
+      return <div>Loading</div>;
+    }
+
     return <Exercise2 {...this.state} />;
   }
 }

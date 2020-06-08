@@ -1,8 +1,12 @@
 import React, { FunctionComponent, useState } from 'react';
 import { OnlyEvens } from '../OnlyEvens';
 
-export const Exercise6: FunctionComponent = () => {
-  const [value, changeValue] = useState(0);
+interface IAppProps {
+  initialValue?: number;
+}
+
+export const Exercise6: FunctionComponent<IAppProps> = ({ initialValue = 0 }) => {
+  const [value, changeValue] = useState(initialValue);
 
   return (
     <div>

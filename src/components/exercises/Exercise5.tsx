@@ -10,7 +10,7 @@ interface IAppState {
 }
 
 export class Exercise5 extends Component<IAppProps, IAppState> {
-  constructor(props: IAppProps) {
+  public constructor(props: IAppProps) {
     super(props);
     this.state = {
       value: 0,
@@ -21,6 +21,7 @@ export class Exercise5 extends Component<IAppProps, IAppState> {
   public addValue() {
     // tslint:disable-next-line:no-console
     console.log('state was: ', this.state.value);
+
     this.setState(
       {
         value: this.state.value + 1,
@@ -30,6 +31,9 @@ export class Exercise5 extends Component<IAppProps, IAppState> {
         console.log('state is: ', this.state.value);
       }
     );
+
+    // tslint:disable-next-line:no-console
+    console.log('state after: ', this.state.value);
   }
 
   public render() {

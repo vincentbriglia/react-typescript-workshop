@@ -1,6 +1,7 @@
 import React, { Fragment, FunctionComponent, useState } from 'react';
 import { BrowserRouter, Link, NavLink, Route, Switch } from 'react-router-dom';
 import { App } from './App';
+import { Exercise1 } from './components/exercises/Exercise1';
 import { Header } from './components/Header';
 import { NoMatch } from './components/NoMatch';
 import { routeData } from './Routes';

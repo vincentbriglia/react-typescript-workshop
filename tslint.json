@@ -4,6 +4,7 @@
     "no-submodule-imports": [true, "semantic-ui-css"],
     "completed-docs": false,
     "no-import-side-effect": false,
-    "comment-type": false
+    "comment-type": false,
+    "no-console": false
   }
 }

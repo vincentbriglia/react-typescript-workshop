@@ -8,12 +8,13 @@ interface IExercise3State {
 }
 
 export class Exercise3 extends React.Component<IExercise3Props, IExercise3State> {
-  constructor(props: IExercise3Props) {
+  public state: IExercise3State = {
+    checked: false,
+  };
+
+  public constructor(props: IExercise3Props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
-    this.state = {
-      checked: false,
-    };
   }
 
   public handleChange(e: React.ChangeEvent<HTMLInputElement>) {
