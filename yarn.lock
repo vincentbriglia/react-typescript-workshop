@@ -1336,30 +1336,30 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@lego/prettier-config@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@lego/prettier-config/-/prettier-config-2.0.0.tgz#53bd30e1a1f4a656f41bfcf776bba978b8fb97ca"
-  integrity sha512-Nvl68FWFcVPwnIpxcb5dS8LgyFLMc5p0BwUe9QId0kCKZCZZvg6VqWzqyjJSgb3i3rZwQhI92/SjRy+lW9ZocA==
+"@lego/prettier-config@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@lego/prettier-config/-/prettier-config-3.0.0.tgz#95ab1510a67d77e362f889224811974574e2fbc9"
+  integrity sha512-wxglGqPW+3s67A37L6jmRJdI/SWC8ngIDr0SkNJLMpDtbktXdNvC67Yh8giHG0pLhmgtAjREPKZDM0olYnDQfA==
   dependencies:
     prettier "2.0.5"
 
-"@lego/tslint-config-prettier@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@lego/tslint-config-prettier/-/tslint-config-prettier-2.0.0.tgz#fa67733acb11e5ce0c6c69bbc884a1a29207e5ce"
-  integrity sha512-fsV5zZj8KRcm95PSQou0l97BAJhcuDr7ep5op4Q1Tj1rnh8BJPKlOI+ahgYxCXF0ON3EkYANF30v1XWQpjJAtA==
+"@lego/tslint-config-prettier@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@lego/tslint-config-prettier/-/tslint-config-prettier-3.0.0.tgz#f28eafc9962ad89e42d2fc05e0af293616726943"
+  integrity sha512-wLuZgXxz4t7Suj2mwrdX5Qq411UyoWPS57gGVGa1YPoMYhuiAtWV2TfN5OmtNCLs+K6xqfnTFGIg24K8QHP0Mw==
   dependencies:
-    "@lego/prettier-config" "2.0.0"
+    "@lego/prettier-config" "3.0.0"
     prettier "2.0.5"
     tslint "6.1.2"
     tslint-config-prettier "1.18.0"
     tslint-plugin-prettier "2.3.0"
 
-"@lego/tslint-config@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@lego/tslint-config/-/tslint-config-3.0.0.tgz#1c7524438c5a49288b67b3921c77f1974875b0d5"
-  integrity sha512-Wh3V+5FGoDy0r3CCuunGpwGqld/9wTpsgSFo1SZCT9uworXXMMUWB/bHRSDdQ5QOAcRrW24y5J/5mAQ4dbrHog==
+"@lego/tslint-config@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@lego/tslint-config/-/tslint-config-4.0.0.tgz#9dfd43b5076901564c2049ad4cf35471bc87731f"
+  integrity sha512-k6O5Kv2mDjQRplQHCl6ZF6hMDVRzuuam2/Aei3b8mcUGfOJwA1u1G6NnoDbWTaCJfpu0fBZA5epNhujbrppS4g==
   dependencies:
-    "@lego/tslint-config-prettier" "2.0.0"
+    "@lego/tslint-config-prettier" "3.0.0"
     lodash.omit "4.5.0"
     prettier "2.0.5"
     tslint "6.1.2"
