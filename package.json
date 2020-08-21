@@ -35,7 +35,7 @@
     "@types/axios": "0.14.0",
     "@types/classnames": "2.2.10",
     "@types/react-router-dom": "5.1.5",
-    "axios": "0.19.2",
+    "axios": "0.20.0",
     "semantic-ui-css": "2.4.1"
   }
 }
